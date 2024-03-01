@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+#container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#contactBox{
+    max-width: 71vw;
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px 5px rgba(0,0,0,0.19);
+    
+}
+
+.left iframe{
+    padding: 10px 10px;
+
+}
+#formm{
+    padding: 25px 45px;
+}
+
+#formm>input{
+    border-radius: 5px;
+}
+
+
+
+h2{
+    position: relative;
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+}
+
+h2:after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 58px;
+    border-radius: 5px;
+    background-color: rgb(252, 152, 81);
+}
+.field{
+    width: 100%;
+    border: 2px solid rgba(0,0,0,0.19);
+    outline: none;
+    background-color: antiquewhite;
+    padding: .5rem 1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+}
+
+.field:hover{
+    background-color: rgb(255, 207, 207);
+}
+textarea{
+    min-height: 150px;
+    border-radius: 5px;
+}
+
+.btn{
+    width: 15vw;
+    padding: 0.5rem 1rem;
+    background-color: rgb(156, 0, 0);
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    border-radius: 8px;
+}
+.btn:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: #000 1px solid;
+}
+.field:focus{
+    border: 2px solid rgba(0,0,0,0.19);
+    background: #dbdbdb;
+}
+@media screen and (max-width : 769px) {
+    #contactBox{
+        grid-template-columns: 1fr;
+        box-shadow: none;
+    }
+
+    #map iframe{
+        margin-top: 3%;
+        padding: 5px;
+        width: auto;
+    }
+
+    #formm>.btn{
+        width: auto;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
